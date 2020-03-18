@@ -5,8 +5,8 @@
         <description>Insurance Approved</description>
         <protected>false</protected>
         <recipients>
-            <recipient>Mail_Handler</recipient>
-            <type>role</type>
+            <recipient>calebflick@cunning-badger-nrqpon.com</recipient>
+            <type>user</type>
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>unfiled$public/Insurance_Approval</template>
@@ -16,10 +16,28 @@
         <description>Insurance Rejected</description>
         <protected>false</protected>
         <recipients>
-            <recipient>Mail_Handler</recipient>
-            <type>role</type>
+            <recipient>calebflick@cunning-badger-nrqpon.com</recipient>
+            <type>user</type>
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>unfiled$public/Insurance_Disapproval</template>
     </alerts>
+    <fieldUpdates>
+        <fullName>Status_No_Payout</fullName>
+        <field>Delivery_Status__c</field>
+        <literalValue>Missing - No Payout</literalValue>
+        <name>Status No Payout</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_Payout_Received</fullName>
+        <field>Delivery_Status__c</field>
+        <literalValue>Missing - Received Payout</literalValue>
+        <name>Status Payout Received</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
 </Workflow>

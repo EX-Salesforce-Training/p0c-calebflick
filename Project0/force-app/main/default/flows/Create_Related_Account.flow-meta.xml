@@ -66,11 +66,11 @@
                 <stringValue>[Contact].FirstName + &quot; &quot; + [Contact].LastName</stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_2_myRule_1_A1_8155304525</name>
+        <name>formula_2_myRule_1_A1_5747768301</name>
         <dataType>String</dataType>
         <expression>{!myVariable_current.FirstName} + &quot; &quot; + {!myVariable_current.LastName}</expression>
     </formulas>
-    <interviewLabel>Create_Related_Account-2_InterviewLabel</interviewLabel>
+    <interviewLabel>Create_Related_Account-3_InterviewLabel</interviewLabel>
     <label>Create Related Account</label>
     <processMetadataValues>
         <name>ObjectType</name>
@@ -129,7 +129,43 @@
             </processMetadataValues>
             <field>Name</field>
             <value>
-                <elementReference>formula_2_myRule_1_A1_8155304525</elementReference>
+                <elementReference>formula_2_myRule_1_A1_5747768301</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Account Phone</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue/>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Reference</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Phone</field>
+            <value>
+                <elementReference>myVariable_current.Phone</elementReference>
             </value>
         </inputAssignments>
         <object>Account</object>

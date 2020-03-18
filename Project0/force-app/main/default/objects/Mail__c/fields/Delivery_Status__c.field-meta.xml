@@ -46,6 +46,16 @@
                 <default>false</default>
                 <label>Missing</label>
             </value>
+            <value>
+                <fullName>Missing - Received Payout</fullName>
+                <default>false</default>
+                <label>Missing - Received Payout</label>
+            </value>
+            <value>
+                <fullName>Missing - No Payout</fullName>
+                <default>false</default>
+                <label>Missing - No Payout</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>
